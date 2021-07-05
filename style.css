@@ -1,0 +1,156 @@
+*{ /* reseta propriedades */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.jm-wrapper {
+    display: flex; /* flex container- todos os itens ficam em linha ocupando mais espaço, sempre alinhando */
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.jm-aviao {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.jm-aviao img {
+    height: 25rem;
+    margin-right: 10rem;
+}
+
+.jm-login {
+    display: flex;
+    align-items: center; /* horizontal */
+    justify-content: space-around; /* vertical */
+    flex-direction: column;
+    width: 75%;
+    min-height: 36rem;
+}
+
+.btnEntrar {
+    color: black;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.5rem ;
+    border: 1px solid lightgray;
+}
+
+
+.group:nth-child(1) {  /* formata a primeira parte  */
+    min-height: 19rem;
+}
+
+.jm-logo {
+    height: 4rem;
+    align-items: center;
+}
+
+
+.jm-login {
+    background-color: rgb(252,172,6);
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.btnEntrar{
+    width: 12.5rem;
+}
+
+.jm-login a {
+    color: rgb(4, 163, 137);
+}
+
+
+.not-account {
+    color: rgb(160, 160, 160);
+}
+
+
+.get-the-app {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1) {
+    background-image: url(./img/apple-button.png);
+}
+
+.app-download:nth-child(2) {
+    background-image: url(./img/googleplay-button.png);
+}
+
+/* media queries */
+
+@media (max-width: 1024px) {
+    .instagram-wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px){
+    body{
+        background-color: white;
+    }
+
+    .jm-wrapper {
+        width: 90%;
+    }
+
+    .jm-aviao {
+        display : none;
+    }
+
+    .jm-continue {
+        width: 100%;
+    }
+
+    .group {
+        border: 1px solid transparent;
+    }
+}
